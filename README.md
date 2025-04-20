@@ -1,17 +1,64 @@
 
-# React + Vite
+# :books: **LearnFlow**
+LearnFlow is a personalized learning platform built using React + Vite, designed to help learners identify their learning style, track their skills through a visual skill tree, and get daily content recommendations from YouTube and blog sources.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :fire: **Features**
+- ### Learning Analyzer:brain:
+  -Users take a quiz to determine their learning style (visual, auditory, etc.).
+  -Tailored learning recommendations based on quiz results.
 
-Currently, two official plugins are available:
+- ### Skill Tree Progression :deciduous_tree:
+ - Visual representation of skills with levels.
+ - Unlock new skills based on progress.
+ - Tracks completed and locked skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ### Daily Feed:calender:
+ - Integrates YouTube tutorials, blog posts, and more.
+ - Supports bookmarking and watched status.
 
-## Expanding the ESLint configuration
+## :hammer_and_wrench:**Tech Stack**
+  - ### Frontend:
+   - React.js (Functional Components, React Router)
+   - Twailwind CSS(UI Design)
+   - LocalStorage (for saving preferences/bookmarks)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  - ### State Management:
+   - React Context API (for managing bookmarks, watched videos)
 
-# LearnFlow
-end term3 project
+  - ### APIs Used:
+    - YouTube API (for fetching tutorial videos)
+    - Mock APIs (for storing learning data) as youtube api limit exceeded
+
+ ## **How to Use** :memo:
+1. #### Take the Learning Style Quiz:
+        Upon signing in, you'll be prompted to take a quiz to determine your preferred learning style (visual, auditory, kinesthetic, etc.).
+
+2. #### Track Skills in the Skill Tree:
+        As you progress through tutorials, your skill levels will increase. Skills are unlocked based on your progress in the app.
+
+3. #### Bookmark and Watch Content:
+        Bookmark useful tutorials or articles and mark them as watched once you complete them.
+
+4. #### Check Your Personalized Daily Feed:
+        Every day, the app will present a feed of content tailored to your current learning path and preferences.
+
+## **Future Enhancements**:eyes:
+ - Gamification 🎮:
+   Add achievements, badges, and more ways to motivate users to complete their learning milestones.
+
+ - Social Learning 🤝:
+   Enable users to share their progress, challenge each other, and collaborate on learning projects.
+
+- Advanced Analytics :star:
+  Provide detailed insights into users' learning patterns and offer suggestions for improvement.
+
+##  ScreenShots:flag:
+    ![Screenshot DailyFeed route]('/home/payel-manna/Documents/MyLearningApp(End-Term-Project)/vite-project/vite-project/src/assets/Screenshot of Daily Feed.png')
+    ![Screenshot Home Page]('/home/payel-manna/Documents/MyLearningApp(End-Term-Project)/vite-project/vite-project/src/assets/Screenshot of HomePage.png')
+    
+
+
+
+   
+ 
 
