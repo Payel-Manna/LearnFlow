@@ -11,8 +11,11 @@ function Home() {
         <nav className="space-x-6 text-sm font-medium text-gray-700">
           <Link to="/" className="hover:text-blue-500">Home</Link>
           <Link to="/quiz" className="hover:text-blue-500">Quiz</Link>
+          
           <Link to="/skillTree" className="hover:text-blue-500">Skill Tree</Link>
+           
           <Link to="/dailyFeed" className="hover:text-blue-500">Daily Feed</Link>
+          <Link to="/bookmarkPage" className="hover:text-blue-500">Bookmarks</Link>
         </nav>
       </header>
 
@@ -47,7 +50,7 @@ function Home() {
         />
       </section>
       </main>
-      
+
       {/* FOOTER */}
       <footer className="text-center text-sm text-gray-500 py-6 bg-gray-100 mt-auto">
         © {new Date().getFullYear()} LearnFlow. All rights reserved.

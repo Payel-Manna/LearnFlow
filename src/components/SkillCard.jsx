@@ -35,6 +35,7 @@ const SkillCard = ({ skill }) => {
           }`}
         >
           Status: {skill.status}
+          
         </p>
       </div>
 

@@ -6,7 +6,7 @@ import BadgeProgress from './BadgeProgress';
 
 const SkillTree = () => {
   const { skills, unlockNextSkill } = useSkills();
-  const [showForm, setShowForm] = useState(false); // state for showing AddSkillForm
+  const [showForm, setShowForm] = useState(false);
   
   const levelStyles = {
     Beginner: 'bg-blue-50',
@@ -14,9 +14,7 @@ const SkillTree = () => {
     Advanced: 'bg-red-50',
   };
 
-  // const ResetButton = () => {
-  //   const { resetSkills } = useSkills();
-  // }
+  
 
   return (
     <div className="p-6 flex flex-col h-screen">

@@ -38,7 +38,7 @@ const fetchYouTubeVideos = async () => {
   // Simulated YouTube video data
   const mockVideos = [
     {
-      id: { videoId: 'abc123' },
+      id: { videoId: 'Ke90Tje7VS0' },
       snippet: {
         title: 'Intro to React in 15 Minutes',
         thumbnails: {
@@ -51,66 +51,53 @@ const fetchYouTubeVideos = async () => {
       },
     },
     {
-      id: { videoId: 'def456' },
+      id: { videoId: 'W6NZfCO5SIk' },
       snippet: {
-        title: 'Beginner JavaScript Tutorial',
+        title: 'JavaScript Tutorial for Beginners',
         thumbnails: {
           medium: {
             url: 'https://i.ytimg.com/vi/W6NZfCO5SIk/mqdefault.jpg',
           },
         },
         channelTitle: 'Programming with Mosh',
-        description: 'Complete beginner-friendly JavaScript tutorial.',
+        description: 'Learn JavaScript from scratch.',
       },
     },
     {
-      id: { videoId: 'ghi789' },
+      id: { videoId: 'pQN-pnXPaVg' },
       snippet: {
-        title: 'CSS Flexbox in 10 Minutes',
+        title: 'HTML Full Course – Beginner to Pro',
         thumbnails: {
           medium: {
-            url: 'https://i.ytimg.com/vi/JJSoEo8JSnc/mqdefault.jpg',
+            url: 'https://i.ytimg.com/vi/pQN-pnXPaVg/mqdefault.jpg',
+          },
+        },
+        channelTitle: 'Bro Code',
+        description: 'Full HTML course for beginners.',
+      },
+    },
+    {
+      id: { videoId: 'yfoY53QXEnI' },
+      snippet: {
+        title: 'CSS Crash Course for Beginners',
+        thumbnails: {
+          medium: {
+            url: 'https://i.ytimg.com/vi/yfoY53QXEnI/mqdefault.jpg',
           },
         },
         channelTitle: 'Traversy Media',
-        description: 'Quickly master CSS Flexbox for layouts.',
+        description: 'Crash course to master CSS fast.',
       },
     },
-    {
-      id: { videoId: 'jkl101' },
-      snippet: {
-        title: 'Learn Git & GitHub - Crash Course',
-        thumbnails: {
-          medium: {
-            url: 'https://i.ytimg.com/vi/RGOj5yH7evk/mqdefault.jpg',
-          },
-        },
-        channelTitle: 'freeCodeCamp.org',
-        description: 'Version control with Git and GitHub basics.',
-      },
-    },
-    {
-      id: { videoId: 'mno102' },
-      snippet: {
-        title: 'What is an API? Explained Simply',
-        thumbnails: {
-          medium: {
-            url: 'https://i.ytimg.com/vi/s7wmiS2mSXY/mqdefault.jpg',
-          },
-        },
-        channelTitle: 'Tech with Tim',
-        description: 'Understand APIs in under 5 minutes.',
-      },
-    },
-    
-    // Add 2–4 more mock videos as needed
   ];
+  
+  
   return mockVideos;
 };
 
 
   const fetchBlogPosts = async () => {
-    // Simulated blog data - replace with API if available
+    
     const mockBlogs = [
       {
         id: 1,

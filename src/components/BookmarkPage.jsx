@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useFeed } from '../context/FeedContext';
 import VideoCard from './VideoCard';
-import VideoModal from './VideoModal'; // Assuming you have a VideoModal component
+import VideoModal from './VideoModal';
 
 function Bookmarks() {
   const { bookmarks } = useFeed();
@@ -31,14 +31,14 @@ function Bookmarks() {
             <VideoCard
               key={video.id.videoId}
               video={video}
-              onOpenModal={() => openModal(video)}  // Passing the video to openModal
+              onOpenModal={() => openModal(video)}  
             />
           ))}
         </div>
       )}
 
       {isModalOpen && currentVideo && (
-        <VideoModal video={currentVideo} onClose={closeModal} />  // Assuming you have a VideoModal component
+        <VideoModal video={currentVideo} onClose={closeModal} />  
       )}
     </div>
   );

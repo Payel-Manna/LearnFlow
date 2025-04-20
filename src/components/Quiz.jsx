@@ -5,7 +5,7 @@ import { useQuizContext } from "../context/QuizContext"
 import { useNavigate } from 'react-router-dom';
 function Quiz() {
 
-  const { answers, selectAnswer, calculateResult } = useQuizContext();
+  const { answers, selectAnswers, calculateResult } = useQuizContext();
   const navigate = useNavigate();
 
   const handleSubmit = () => {
@@ -15,6 +15,7 @@ function Quiz() {
     }
     calculateResult();
     navigate("/result");
+    console.log(answers)
   };
   return (
     <div className="max-w-3xl mx-auto p-6 space-y-8">
@@ -30,7 +31,7 @@ function Quiz() {
           question={q.question}
           options={q.options}
           selectedOption={answers[q.id]}
-          onSelect={selectAnswer}
+          onSelect={selectAnswers}
         />
       ))}
 

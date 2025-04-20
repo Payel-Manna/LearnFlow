@@ -1,4 +1,4 @@
-// src/components/AddSkillForm.jsx
+
 import React, { useState, useContext } from 'react';
 import { useSkills } from '../context/SkillContext';
 import { v4 as uuidv4 } from 'uuid';
@@ -27,7 +27,7 @@ const AddSkillForm = () => {
     
     addSkill(newSkill);
     
-    // Reset form
+   
     setName('');
     setLevel('Beginner');
     setSelectedPrereqs([]);

@@ -73,7 +73,7 @@ export const SkillProvider = ({ children }) => {
  
    const resetSkills = (skillId) => {
     setSkills((prevSkills) => {
-      // Step 1: Lock the skill
+      // Lock the skill
       let updatedSkills = prevSkills.map((skill) => {
         if (skill.id === skillId) {
           return { ...skill, status: 'locked' };
@@ -81,7 +81,7 @@ export const SkillProvider = ({ children }) => {
         return skill;
       });
   
-      // Step 2: Lock skills that depend on it
+      //  Lock skills that depend on it
       updatedSkills = updatedSkills.map((skill) => {
         if (
           skill.prerequisites.includes(skillId) &&
@@ -92,7 +92,7 @@ export const SkillProvider = ({ children }) => {
         return skill;
       });
   
-      // Step 3: Recalculate unlock status (including this one)
+      // Recalculate unlock status (including this one)
       updatedSkills = updatedSkills.map((skill) => {
         if (
           skill.status === 'locked' &&
@@ -109,7 +109,7 @@ export const SkillProvider = ({ children }) => {
         }
         return skill;
       });
-      // Step 4: Unlock root skills with no prerequisites
+      //  Unlock root skills with no prerequisites
       updatedSkills = updatedSkills.map((skill) => {
        if (skill.prerequisites.length === 0 && skill.status === 'locked') {
         return { ...skill, status: 'unlocked' };
