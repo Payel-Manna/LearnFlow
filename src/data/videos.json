@@ -1,0 +1,143 @@
+[
+    {
+      "title": "JavaScript Full Course - Beginner to Advanced",
+      "link": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+      "source": "freeCodeCamp",
+      "tags": ["JavaScript"],
+      "level": "Beginner"
+    },
+    {
+      "title": "JavaScript ES6 Tutorial",
+      "link": "https://www.youtube.com/watch?v=NCwa_xi0Uuc",
+      "source": "GeeksForGeeks",
+      "tags": ["JavaScript"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "Tailwind CSS Tutorial for Beginners",
+      "link": "https://www.youtube.com/watch?v=dFgzHOX84xQ",
+      "source": "freeCodeCamp",
+      "tags": ["Tailwind CSS"],
+      "level": "Beginner"
+    },
+    {
+      "title": "Tailwind Projects - Build a Portfolio",
+      "link": "https://www.youtube.com/watch?v=uR4PzL0oT54",
+      "source": "CodeWithHarry",
+      "tags": ["Tailwind CSS"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "React Tutorial - Build a Weather App",
+      "link": "https://www.youtube.com/watch?v=b9eMGE7QtTk",
+      "source": "freeCodeCamp",
+      "tags": ["React"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "React Basics in Hindi",
+      "link": "https://www.youtube.com/watch?v=LlvBzyy-558",
+      "source": "CodeWithHarry",
+      "tags": ["React"],
+      "level": "Beginner"
+    },
+    {
+      "title": "Java Programming Full Course",
+      "link": "https://www.youtube.com/watch?v=UmnCZ7-9yDY",
+      "source": "freeCodeCamp",
+      "tags": ["Java"],
+      "level": "Beginner"
+    },
+    {
+      "title": "Java OOPs Concepts",
+      "link": "https://www.youtube.com/watch?v=eIrMbAQSU34",
+      "source": "GeeksForGeeks",
+      "tags": ["Java"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "Python for Beginners",
+      "link": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+      "source": "freeCodeCamp",
+      "tags": ["Python"],
+      "level": "Beginner"
+    },
+    {
+      "title": "Python Advanced Tutorial",
+      "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+      "source": "GeeksForGeeks",
+      "tags": ["Python"],
+      "level": "Advanced"
+    },
+    {
+      "title": "MongoDB Crash Course",
+      "link": "https://www.youtube.com/watch?v=-56x56UppqQ",
+      "source": "freeCodeCamp",
+      "tags": ["MongoDB", "Databases"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "SQL Full Course",
+      "link": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+      "source": "freeCodeCamp",
+      "tags": ["SQL", "Databases"],
+      "level": "Beginner"
+    },
+    {
+      "title": "MERN Stack Full Project",
+      "link": "https://www.youtube.com/watch?v=4ZDuDQQyn5E",
+      "source": "CodeWithHarry",
+      "tags": ["MERN"],
+      "level": "Advanced"
+    },
+    {
+      "title": "Build a Chat App with MERN",
+      "link": "https://www.youtube.com/watch?v=x6XFo4J4aqI",
+      "source": "freeCodeCamp",
+      "tags": ["MERN", "Full Stack"],
+      "level": "Advanced"
+    },
+    {
+      "title": "Data Structures in JavaScript",
+      "link": "https://www.youtube.com/watch?v=RBSGKlAvoiM",
+      "source": "freeCodeCamp",
+      "tags": ["DSA", "JavaScript"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "Learn REST API in Node.js",
+      "link": "https://www.youtube.com/watch?v=l8WPWK9mS5M",
+      "source": "GeeksForGeeks",
+      "tags": ["API", "Node.js"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "JWT Authentication in Node",
+      "link": "https://www.youtube.com/watch?v=7nafaH9SddU",
+      "source": "CodeWithHarry",
+      "tags": ["Node.js", "Auth"],
+      "level": "Advanced"
+    },
+    {
+      "title": "Responsive Design using Tailwind",
+      "link": "https://www.youtube.com/watch?v=ft30zcMlFao",
+      "source": "freeCodeCamp",
+      "tags": ["Tailwind CSS"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "JavaScript ES6 Features in Hindi",
+      "link": "https://www.youtube.com/watch?v=Q8TXgCzxEnw",
+      "source": "CodeWithHarry",
+      "tags": ["JavaScript"],
+      "level": "Intermediate"
+    },
+    {
+      "title": "Python for Data Science",
+      "link": "https://www.youtube.com/watch?v=LHBE6Q9XlzI",
+      "source": "freeCodeCamp",
+      "tags": ["Python", "Data Science"],
+      "level": "Intermediate"
+    }
+  ]
+  
