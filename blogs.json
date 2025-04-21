@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": " React Hooks",
+    "link": "https://www.geeksforgeeks.org/reactjs-hooks/",
+    "source": "DEV",
+    "level": "Beginner"
+    
+  },
+  {
+    "id": 2,
+    "title": "Beginner’s Guide to JavaScript",
+    "link": "https://www.freecodecamp.org/news/full-javascript-course-for-beginners/",
+    "source": "FreeCodeCamp",
+    "level": "Beginner"
+   
+  },
+  {
+    "id": 3,
+    "title": "CSS Grid vs Flexbox: When to Use What",
+    "link": "https://www.geeksforgeeks.org/comparison-between-css-grid-css-flexbox/",
+    "source": "Geeks for geeks",
+    "level": "Intermediate"
+    
+  },
+  {
+    "id": 4,
+    "title": "Deep Dive into Async/Await in JS",
+    "link": "https://www.scaler.com/topics/javascript/async-await-javascript/",
+    "source": "Scaler topics",
+    "level": "Advanced"
+   
+  },
+  {
+    "id": 5,
+    "title": "HTML Semantic Tags Explained",
+    "link": "https://www.w3schools.com/Html/",
+    "source": "W3 school",
+    "level": "Beginner"
+    
+  }
+]
