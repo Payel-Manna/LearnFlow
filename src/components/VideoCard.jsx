@@ -1,32 +1,48 @@
 import React from 'react';
-import { Bookmark, BookmarkCheck, CheckCircle, Circle } from 'lucide-react';
+import { Bookmark, Eye, EyeOff } from 'lucide-react';
 
-const VideoCard = ({ video, onOpenModal, isBookmarked, toggleBookmark, isWatched, toggleWatched }) => {
-  const { title, thumbnails, channelTitle } = video.snippet;
+function VideoCard({ video, onOpenModal, isBookmarked, toggleBookmark, isWatched, toggleWatched }) {
+  const videoId = video.id.videoId;
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
   return (
-    <div className="border rounded p-3 hover:shadow-lg transition">
-      <img
-        src={thumbnails?.medium?.url}
-        alt={title}
-        className="w-full h-48 object-cover rounded cursor-pointer"
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3">
+      <div
+        className="cursor-pointer overflow-hidden rounded-xl"
         onClick={onOpenModal}
-      />
-      <h4 className="text-md font-semibold mt-2 cursor-pointer" onClick={onOpenModal}>
-        {title}
-      </h4>
-      <p className="text-sm text-gray-500">{channelTitle}</p>
+      >
+        <img
+          src={thumbnailUrl}
+          alt={video.snippet.title}
+          className="w-full h-48 object-cover rounded-xl"
+        />
+      </div>
 
-      <div className="flex justify-between items-center mt-3">
-        <button onClick={toggleBookmark} title={isBookmarked ? 'Remove Bookmark' : 'Bookmark'}>
-          {isBookmarked ? <BookmarkCheck className="text-blue-500" /> : <Bookmark />}
+      <div className="mt-3">
+        <h4 className="font-semibold text-lg line-clamp-2">{video.snippet.title}</h4>
+        <p className="text-sm text-gray-500 mt-1">{video.snippet.description}</p>
+      </div>
+
+      <div className="flex justify-between items-center mt-4">
+        <button
+          onClick={toggleBookmark}
+          className={`text-sm flex items-center gap-1 ${isBookmarked ? 'text-yellow-500' : 'text-gray-500 hover:text-yellow-500'}`}
+        >
+          <Bookmark size={18} />
+          {isBookmarked ? 'Bookmarked' : 'Bookmark'}
         </button>
-        <button onClick={toggleWatched} title={isWatched ? 'Mark Unwatched' : 'Mark Watched'}>
-          {isWatched ? <CheckCircle className="text-green-500" /> : <Circle />}
+
+        <button
+          onClick={toggleWatched}
+          className={`text-sm flex items-center gap-1 ${isWatched ? 'text-green-500' : 'text-gray-500 hover:text-green-500'}`}
+        >
+          {isWatched ? <EyeOff size={18} /> : <Eye size={18} />}
+          {isWatched ? 'Watched' : 'Mark Watched'}
         </button>
       </div>
     </div>
   );
-};
+}
 
 export default VideoCard;
+
