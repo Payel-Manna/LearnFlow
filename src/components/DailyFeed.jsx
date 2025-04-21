@@ -3,8 +3,11 @@ import { useFeed } from '../context/FeedContext';
 import VideoCard from './VideoCard';
 import VideoModal from './VideoModal';
 import BlogCard from './BlogCard';
-import mockVideos from '../data/videos.json';
-import mockBlogs from '../data/blogs.json';
+// import mockVideos from '/videos.json';
+// import mockBlogs from '/blogs.json';
+// fetch('/videos.json')
+// fetch('/blogs.json')
+
 
 function DailyFeed() {
   const { bookmarks, toggleBookmark, watched, toggleWatched } = useFeed();
@@ -19,6 +22,40 @@ function DailyFeed() {
   const [filteredBlogs, setFilteredBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
+//Fetching data from json files
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const videoRes = await fetch('/videos.json');
+        const blogRes = await fetch('/blogs.json');
+        const videoData = await videoRes.json();
+        const blogData = await blogRes.json();
+  
+        const formatted = formatVideos(videoData);
+        setVideos(formatted);
+        setFilteredVideos(applyVideoFilters(formatted));
+  
+        setBlogs(blogData);
+        setFilteredBlogs(applyBlogFilters(blogData));
+      } catch (error) {
+        console.error('Error loading data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+  
+    fetchData();
+  }, []);
+  
+  const handleSearch = () => {
+    setLoading(true);
+    const filteredVids = applyVideoFilters(videos);
+    const filteredBlgs = applyBlogFilters(blogs);
+    setFilteredVideos(filteredVids);
+    setFilteredBlogs(filteredBlgs);
+    setLoading(false);
+  };
   // Extract video ID from YouTube URL
   const getVideoId = (url) => {
     const urlObj = new URL(url);
@@ -37,16 +74,16 @@ function DailyFeed() {
       },
     }));
 
-  const fetchVideos = () => {
-    const formatted = formatVideos(mockVideos);
-    setVideos(formatted);
-    setFilteredVideos(applyVideoFilters(formatted));
-  };
+  // const fetchVideos = () => {
+  //   const formatted = formatVideos(mockVideos);
+  //   setVideos(formatted);
+  //   setFilteredVideos(applyVideoFilters(formatted));
+  // };
 
-  const fetchBlogs = () => {
-    setBlogs(mockBlogs);
-    setFilteredBlogs(applyBlogFilters(mockBlogs));
-  };
+  // const fetchBlogs = () => {
+  //   setBlogs(mockBlogs);
+  //   setFilteredBlogs(applyBlogFilters(mockBlogs));
+  // };
 
   const applyVideoFilters = (videos) =>
     videos.filter((video) => {
@@ -69,17 +106,17 @@ function DailyFeed() {
       return titleMatch && levelMatch;
     });
 
-  const handleSearch = () => {
-    setLoading(true);
-    fetchVideos();
-    setFilteredBlogs(applyBlogFilters(blogs));
-    setLoading(false);
-  };
+  // const handleSearch = () => {
+  //   setLoading(true);
+  //   fetchVideos();
+  //   setFilteredBlogs(applyBlogFilters(blogs));
+  //   setLoading(false);
+  // };
 
-  useEffect(() => {
-    fetchVideos();
-    fetchBlogs();
-  }, []);
+  // useEffect(() => {
+  //   fetchVideos();
+  //   fetchBlogs();
+  // }, []);
 
   return (
     <div className="p-4">

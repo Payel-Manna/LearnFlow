@@ -3,9 +3,9 @@
 LearnFlow is a personalized learning platform built using React + Vite, designed to help learners identify their learning style, track their skills through a visual skill tree, and get daily content recommendations from YouTube and blog sources.
 
 ## :fire: **Features**
-- ### Learning Analyzer:brain:
-  -Users take a quiz to determine their learning style (visual, auditory, etc.).
-  -Tailored learning recommendations based on quiz results.
+- ### Learning Analyzer :brain:
+  - Users take a quiz to determine their learning style (visual, auditory, etc.).
+  - Tailored learning recommendations based on quiz results.
 
 - ### Skill Tree Progression :deciduous_tree:
  - Visual representation of skills with levels.
@@ -31,16 +31,16 @@ LearnFlow is a personalized learning platform built using React + Vite, designed
 
  ## **How to Use** :memo:
 1. #### Take the Learning Style Quiz:
-        Upon signing in, you'll be prompted to take a quiz to determine your preferred learning style (visual, auditory, kinesthetic, etc.).
+        - Upon signing in, you'll be prompted to take a quiz to determine your preferred learning style (visual, auditory, kinesthetic, etc.).
 
 2. #### Track Skills in the Skill Tree:
-        As you progress through tutorials, your skill levels will increase. Skills are unlocked based on your progress in the app.
+        - As you progress through tutorials, your skill levels will increase. Skills are unlocked based on your progress in the app.
 
 3. #### Bookmark and Watch Content:
-        Bookmark useful tutorials or articles and mark them as watched once you complete them.
+        -Bookmark useful tutorials or articles and mark them as watched once you complete them.
 
 4. #### Check Your Personalized Daily Feed:
-        Every day, the app will present a feed of content tailored to your current learning path and preferences.
+        -Every day, the app will present a feed of content tailored to your current learning path and preferences.
 
 ## **Future Enhancements**:eyes:
  - Gamification 🎮:
